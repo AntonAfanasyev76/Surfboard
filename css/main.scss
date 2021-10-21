@@ -2,12 +2,17 @@ $containerWidth: 940px;
 $baseFontSize: 18px;
 
 //colors
-$blue: #61c4d9;
+$blue: #1968B1; 
 $darkGreen: #0b4d3c;
 
 //normalise
-@import url('./normalize.css');
+@import url('./components/normalize.css');
 
 //setups
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
-@import url('./layout.scss');
+@import "components/layout";
+
+// components
+@import "components/hero";
+@import "components/header";
+@import "components/features";

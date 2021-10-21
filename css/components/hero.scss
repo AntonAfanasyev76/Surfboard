@@ -1,0 +1,14 @@
+.hero {
+    background: url("../../img/bg.png") left top no-repeat;
+    background-color: $blue;
+    height: 100vh;
+    min-height: 650px;
+    color: #fff;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
