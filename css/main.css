@@ -250,6 +250,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  margin-top: 50px;
 }
 
 .benefits__item {
