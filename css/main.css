@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-  width: containerWidth;
+  width: 940px;
   margin: 0 auto;
 }
 
@@ -76,6 +76,7 @@ img {
 
 .hero {
   background: url("../../img/bg.png") left top no-repeat;
+  background-size: cover;
   background-color: #1968B1;
   height: 100vh;
   min-height: 650px;
