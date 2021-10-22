@@ -82,6 +82,10 @@ img {
   color: #fff;
 }
 
+.hero__title-section {
+  width: 46%;
+}
+
 .hero__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,6 +98,21 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+  padding: 24px 0 45px;
+}
+
+.hero__main-title {
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.hero__title-desc {
+  font-size: 21px;
+  margin-bottom: 28px;
+  padding-right: 10%;
 }
 
 .header {
@@ -138,4 +157,46 @@ img {
   width: 12px;
   height: 12px;
   margin-right: 6px;
+}
+
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.features__item {
+  margin-right: 46px;
+}
+.features__item:last-child {
+  margin-right: 0;
+}
+
+.feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feature__icon {
+  width: 45px;
+  margin-right: 7px;
+}
+
+.feature__text {
+  font-size: 16px;
+  max-width: 85px;
+}
+
+.btn {
+  font-size: 19px;
+  font-weight: bold;
+  padding: 18px 35px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  line-height: 1;
+}
+.btn--theme--yellow {
+  background: #FFD517;
+  color: #000;
 }

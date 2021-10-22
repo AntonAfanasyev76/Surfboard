@@ -3,6 +3,7 @@ $baseFontSize: 18px;
 
 //colors
 $blue: #1968B1; 
+$yellow: #FFD517;
 $darkGreen: #0b4d3c;
 
 //normalise
@@ -16,3 +17,4 @@ $darkGreen: #0b4d3c;
 @import "components/hero";
 @import "components/header";
 @import "components/features";
+@import "components/btn";
