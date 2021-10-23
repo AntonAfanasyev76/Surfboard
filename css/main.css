@@ -26,6 +26,7 @@ body {
 .container {
   width: 940px;
   margin: 0 auto;
+  position: relative;
 }
 
 h1,
@@ -258,7 +259,7 @@ img {
       -ms-flex: 1;
           flex: 1;
   position: relative;
-  margin: 0 3%;
+  padding: 0 3%;
 }
 .benefits__item:before {
   content: url("../img/separator.png");
@@ -269,13 +270,13 @@ img {
           transform: translateX(50%);
 }
 .benefits__item:first-child {
-  margin-left: 0;
+  padding-left: 0;
 }
 .benefits__item:last-child {
-  margin-right: 0;
+  padding-right: 0;
 }
 .benefits__item:last-child:before {
-  content: "";
+  display: none;
 }
 
 .benefit {

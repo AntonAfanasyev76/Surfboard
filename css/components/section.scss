@@ -37,7 +37,7 @@
 .benefits__item {
     flex: 1;
     position: relative;
-    margin: 0 3%;
+    padding: 0 3%;
 
     &:before {
         content: url("../img/separator.png");
@@ -49,14 +49,14 @@
     
     
     &:first-child {
-        margin-left: 0;
+        padding-left: 0;
     }
 
     &:last-child {
-        margin-right: 0;
+        padding-right: 0;
 
         &:before {
-            content: "";
+            display: none;
         }
     }
 }
