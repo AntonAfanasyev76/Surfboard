@@ -40,7 +40,7 @@
     margin: 0 3%;
 
     &:before {
-        content: "hgjfjhfgjjgj";
+        content: url("../img/separator.png");
         position: absolute;
         top: 30px;
         right: 0;
@@ -54,6 +54,10 @@
 
     &:last-child {
         margin-right: 0;
+
+        &:before {
+            content: "";
+        }
     }
 }
 

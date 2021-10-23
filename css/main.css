@@ -261,7 +261,7 @@ img {
   margin: 0 3%;
 }
 .benefits__item:before {
-  content: "hgjfjhfgjjgj";
+  content: url("../img/separator.png");
   position: absolute;
   top: 30px;
   right: 0;
@@ -273,6 +273,9 @@ img {
 }
 .benefits__item:last-child {
   margin-right: 0;
+}
+.benefits__item:last-child:before {
+  content: "";
 }
 
 .benefit {
