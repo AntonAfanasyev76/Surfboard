@@ -203,10 +203,17 @@ img {
   text-transform: uppercase;
   border-radius: 100px;
   line-height: 1;
+  border: none;
 }
 .btn--theme--yellow {
   background: #FFD517;
   color: #000;
+}
+.btn--theme--transparent {
+  background: transparent;
+  color: #fff;
+  text-transform: none;
+  font-style: normal;
 }
 
 .section {
@@ -416,6 +423,10 @@ img {
   color: #fff;
 }
 
+.section__title-order {
+  color: #fff;
+}
+
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -481,6 +492,7 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  margin-bottom: 16px;
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
@@ -502,6 +514,7 @@ img {
   position: relative;
   border-radius: 50%;
   background: #fff;
+  margin-right: 10px;
 }
 .radio__visible:before {
   content: "";
@@ -511,6 +524,46 @@ img {
   border-radius: 50%;
   position: absolute;
   display: none;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.radio__title {
+  margin-right: 12px;
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 20%;
+  right: 3%;
+  z-index: 100;
+}
+
+.fixed-menu__item {
+  margin-bottom: 5px;
+}
+.fixed-menu__item--active .fixed-menu__link {
+  border-color: #fff;
+}
+
+.fixed-menu__link {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+  position: relative;
+}
+.fixed-menu__link:before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);

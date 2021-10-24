@@ -5,9 +5,17 @@
     text-transform: uppercase;
     border-radius: 100px;
     line-height: 1;
+    border: none;
 
     &--theme--yellow {
         background: $yellow;
         color: #000;
+    }
+
+    &--theme--transparent {
+        background: transparent;
+        color: #fff;
+        text-transform: none;
+        font-style: normal;
     }
 }

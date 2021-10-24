@@ -6,6 +6,10 @@ $blue: #1968B1;
 $yellow: #FFD517;
 $darkGreen: #0b4d3c;
 
+//z-indexes
+
+$z-fixed-menu: 100;
+
 //normalise
 @import url('./components/normalize.css');
 
@@ -21,3 +25,4 @@ $darkGreen: #0b4d3c;
 @import "components/section";
 @import "components/reviews";
 @import "components/order";
+@import "components/fixed-menu";
