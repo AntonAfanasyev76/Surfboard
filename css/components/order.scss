@@ -79,7 +79,11 @@
 }
 
 .radio__elem {
-    display: none;
+    // display: none;
+
+    &:focus ~ .radio__visible {
+        box-shadow: 0 0 1px 2px $yellow;
+    }
 
     &:checked ~ .radio__visible {
         &::before {

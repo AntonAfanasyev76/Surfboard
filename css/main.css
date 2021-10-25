@@ -76,6 +76,14 @@ img {
   max-width: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .hero {
   background: url("../img/bg.png") left top no-repeat;
   background-size: cover;
@@ -501,8 +509,9 @@ img {
   background: url("../img/icons/tick.svg") center center no-repeat;
 }
 
-.radio__elem {
-  display: none;
+.radio__elem:focus ~ .radio__visible {
+  -webkit-box-shadow: 0 0 1px 2px #FFD517;
+          box-shadow: 0 0 1px 2px #FFD517;
 }
 .radio__elem:checked ~ .radio__visible::before {
   display: block;
