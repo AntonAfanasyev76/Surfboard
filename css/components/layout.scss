@@ -1,10 +1,13 @@
+html {
+    font-size: $baseFontSize;
+}
+
 html,
 body {
     height:100%;
 }
 
 body {
-    font-size: $baseFontSize;
     font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
     line-height: 1.42;
     -webkit-font-smoothing: antialiased;
@@ -16,13 +19,13 @@ body {
 .wrapper {
     position: relative;
     width: 100%;
-    min-width: $containerWidth + 20px;
     min-height: 100%;
     overflow: hidden;
 }
 
 .container {
-    width: $containerWidth;
+    width: 95%;
+    max-width: $containerWidth;
     margin: 0 auto;
     position: relative;
 }
@@ -78,7 +81,7 @@ img {
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+    width: rem(1px);
+    height: rem(1px);
+    margin: rem(-1px);
   }

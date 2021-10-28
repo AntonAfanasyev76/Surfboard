@@ -10,10 +10,13 @@ $darkGreen: #0b4d3c;
 
 $z-fixed-menu: 100;
 
-//normalise
+// media
+@import "components/media";
+
+// normalise
 @import url('./components/normalize.css');
 
-//setups
+// setups
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 @import "components/layout";
 
