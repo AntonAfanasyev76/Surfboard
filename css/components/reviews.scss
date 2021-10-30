@@ -10,11 +10,23 @@
 
 .reviews__display-inner {
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
 }
 
 .reviews__avatar {
     width: rem(254px);
     height: rem(260px);
+
+    @include tablets {
+        width: rem(130px);
+        height: rem(132px);
+        margin-bottom: 20px;
+    }
 }
 
 .reviews__avatar-img {
@@ -37,6 +49,10 @@
 
 .reviews__text {
     margin-bottom: rem(36px);
+
+    @include tablets {
+        margin-bottom: 1rem;
+    }
 }
 
 .reviews__author {
@@ -47,7 +63,11 @@
 
 .reviews__switcher {
     display: flex;
-    justify-content: center
+    justify-content: center;
+
+    @include tablets {
+        margin-bottom: 4rem;
+    }
 }
 
 .interactive-avatar {

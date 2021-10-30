@@ -1,4 +1,4 @@
-@import url("./components/normalize.css");
+@import url("components/normalize");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 html {
   font-size: 18px;
@@ -336,7 +336,7 @@ img {
 
 .headline {
   text-align: center;
-  margin-bottom: px;
+  margin-bottom: 0.9444444444rem;
 }
 
 .headline__title {
@@ -433,10 +433,29 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .reviews__display-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .reviews__avatar {
   width: 14.1111111111rem;
   height: 14.4444444444rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__avatar {
+    width: 7.2222222222rem;
+    height: 7.3333333333rem;
+    margin-bottom: 20px;
+  }
 }
 
 .reviews__avatar-img {
@@ -463,6 +482,11 @@ img {
 .reviews__text {
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .reviews__text {
+    margin-bottom: 1rem;
+  }
+}
 
 .reviews__author {
   font-size: 1rem;
@@ -477,6 +501,11 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .reviews__switcher {
+    margin-bottom: 4rem;
+  }
 }
 
 .interactive-avatar {
@@ -526,6 +555,15 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 19%;
+  }
+}
 
 .form__col {
   -webkit-box-flex: 1;
@@ -535,6 +573,11 @@ img {
 }
 .form__col:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .form__col {
+    margin-right: 0;
+  }
 }
 
 .form__row {
@@ -575,6 +618,20 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .form__controls {
+    margin-bottom: 1rem;
+  }
+}
+
+.form__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .radio {

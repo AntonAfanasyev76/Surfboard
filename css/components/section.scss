@@ -17,7 +17,7 @@
 
 .headline {
     text-align: center;
-    margin-bottom: px;
+    margin-bottom: rem(17px);
 }
 
 .headline__title {
@@ -26,74 +26,4 @@
 
 .headline__subtitle {
     padding: 0 27%;
-}
-
-.benefits {
-    display: flex;
-    position: relative;
-    margin-top: rem(50px);
-}
-
-.benefits__item {
-    flex: 1;
-    position: relative;
-    padding: 0 3%;
-
-    &:before {
-        content: url("../img/separator.png");
-        position: absolute;
-        top: rem(30px);
-        right: 0;
-        transform: translateX(50%);
-    }
-    
-    
-    &:first-child {
-        padding-left: 0;
-    }
-
-    &:last-child {
-        padding-right: 0;
-
-        &:before {
-            display: none;
-        }
-    }
-}
-
-.benefit {
-    text-align: center;
-}
-
-.benefit__image-wrapper {
-    display: inline-block;
-    width: rem(126px);
-    height: rem(126px);
-    position: relative;
-    background: #f2f5f4;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.benefit__icon {
-    width: rem(68px);
-    height: rem(68px);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.benefit__text {
-    margin-top:rem(20px);
-}
-
-.benefit__title {
-    font-size: rem(27px);
-    font-weight: 700;
-    color: #292929;
-}
-
-.benefit__desc {
-    width: rem(285px);
 }

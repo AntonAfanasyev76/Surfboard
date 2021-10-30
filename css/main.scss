@@ -19,7 +19,7 @@ $z-fixed-menu: 100;
 @import "components/media";
 
 // normalise
-@import url('./components/normalize.css');
+@import url("components/normalize");
 
 // setups
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
@@ -31,6 +31,7 @@ $z-fixed-menu: 100;
 @import "components/features";
 @import "components/btn";
 @import "components/section";
+@import "components/benefits";
 @import "components/reviews";
 @import "components/order";
 @import "components/fixed-menu";
