@@ -476,9 +476,14 @@ img {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .reviews-section {
     margin-top: 8.3333333333rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews-section {
+    margin-top: 13.8888888889rem;
   }
 }
 
@@ -616,7 +621,8 @@ img {
 }
 @media screen and (max-width: 480px) {
   .order-section {
-    min-height: 50rem;
+    min-height: 52.7777777778rem;
+    margin-top: 100px;
   }
 }
 

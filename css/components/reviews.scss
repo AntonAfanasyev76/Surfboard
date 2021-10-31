@@ -1,7 +1,11 @@
 .reviews-section {
     
-    @include phones {
+    @include tablets {
         margin-top: rem(150px);
+    }
+
+    @include phones {
+        margin-top: rem(250px);
     }
 }
 
