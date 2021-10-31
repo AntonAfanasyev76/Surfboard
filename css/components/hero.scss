@@ -39,6 +39,10 @@
     @include tablets {
         padding: 0 10%;
     }
+    
+    @include tablets {
+        font-size: rem(28px);
+    }
 }
 
 .hero__title-desc {

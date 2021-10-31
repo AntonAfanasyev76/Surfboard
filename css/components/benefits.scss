@@ -4,6 +4,10 @@
     // flex-wrap: wrap;
     position: relative;
     margin-top: rem(50px);
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .benefits__item {
@@ -11,12 +15,20 @@
     position: relative;
     padding: 0 3%;
 
+    @include phones {
+        padding: 0;
+    }
+
     &:before {
         content: url("../img/separator.png");
         position: absolute;
         top: rem(30px);
         right: 0;
         transform: translateX(50%);
+
+        @include phones {
+            display: none;
+        }
     }
     
     
