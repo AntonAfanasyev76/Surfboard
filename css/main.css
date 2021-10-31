@@ -358,7 +358,7 @@ img {
 
 @media screen and (max-width: 480px) {
   .benefits-section {
-    margin-top: 16.6666666667rem;
+    margin-top: 2.7777777778rem;
   }
 }
 
@@ -468,7 +468,7 @@ img {
 
 @media screen and (max-width: 480px) {
   .reviews-section {
-    margin-top: 19.4444444444rem;
+    margin-top: 8.3333333333rem;
   }
 }
 
@@ -599,14 +599,19 @@ img {
   min-height: 36.1111111111rem;
   color: #fff;
 }
-@media screen and (max-width: 480px) {
-  .order-section {
-    margin-top: 5rem;
-  }
-}
 
 .section__title-order {
   color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .section__title-order {
+    margin-top: 12.7777777778rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section__title-order {
+    margin-top: 16.1111111111rem;
+  }
 }
 
 .form {

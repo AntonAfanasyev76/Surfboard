@@ -5,14 +5,18 @@
     height: 100vh;
     min-height: rem(650px);
     color: #fff;
-
-    @include phones {
-        margin-top: rem(90px);
-    }
 }
 
 .section__title-order {
     color: #fff;
+
+    @include tablets {
+        margin-top: rem(230px);
+    }
+
+    @include phones {
+        margin-top: rem(290px);
+    }
 }
 
 .form {
