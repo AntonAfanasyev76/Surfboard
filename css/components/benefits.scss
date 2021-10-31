@@ -1,13 +1,12 @@
 .benefits-section {
     
     @include phones {
-        margin-top: rem(50px);
+        margin-top: rem(100px);
     }
 }
 
 .benefits {
     display: flex;
-    // flex-wrap: wrap;
     position: relative;
     margin-top: rem(50px);
 
@@ -82,13 +81,20 @@
 
 .benefit__text {
     margin-top:rem(20px);
+
+    @include phones {
+        margin-top: 0;
+    }
 }
 
 .benefit__title {
     font-size: rem(27px);
     font-weight: 700;
     color: #292929;
-    // margin-bottom: ;
+
+    @include phones {
+        margin-bottom: 0;
+    }
 }
 
 .benefit__image {

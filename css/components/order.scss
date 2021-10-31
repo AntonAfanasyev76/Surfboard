@@ -5,17 +5,25 @@
     height: 100vh;
     min-height: rem(650px);
     color: #fff;
+
+    @include tablets {
+        min-height: rem(950px);
+    }
+
+    @include phones {
+        min-height: rem(900px);
+    }
 }
 
 .section__title-order {
     color: #fff;
 
     @include tablets {
-        margin-top: rem(230px);
+        margin-top: rem(30px);
     }
 
     @include phones {
-        margin-top: rem(290px);
+        margin-top: rem(20px);
     }
 }
 
@@ -100,6 +108,10 @@
     cursor: pointer;
     user-select: none;
     margin-bottom: rem(16px);
+
+    @include phones {
+        margin-bottom: rem(10px);
+    }
 
     &--checkbox {
         .radio__visible {

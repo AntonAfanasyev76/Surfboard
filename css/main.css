@@ -358,7 +358,7 @@ img {
 
 @media screen and (max-width: 480px) {
   .benefits-section {
-    margin-top: 2.7777777778rem;
+    margin-top: 5.5555555556rem;
   }
 }
 
@@ -449,11 +449,21 @@ img {
 .benefit__text {
   margin-top: 1.1111111111rem;
 }
+@media screen and (max-width: 480px) {
+  .benefit__text {
+    margin-top: 0;
+  }
+}
 
 .benefit__title {
   font-size: 1.5rem;
   font-weight: 700;
   color: #292929;
+}
+@media screen and (max-width: 480px) {
+  .benefit__title {
+    margin-bottom: 0;
+  }
 }
 
 .benefit__image {
@@ -599,18 +609,28 @@ img {
   min-height: 36.1111111111rem;
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .order-section {
+    min-height: 52.7777777778rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .order-section {
+    min-height: 50rem;
+  }
+}
 
 .section__title-order {
   color: #fff;
 }
 @media screen and (max-width: 768px) {
   .section__title-order {
-    margin-top: 12.7777777778rem;
+    margin-top: 1.6666666667rem;
   }
 }
 @media screen and (max-width: 480px) {
   .section__title-order {
-    margin-top: 16.1111111111rem;
+    margin-top: 1.1111111111rem;
   }
 }
 
@@ -720,6 +740,11 @@ img {
       -ms-user-select: none;
           user-select: none;
   margin-bottom: 0.8888888889rem;
+}
+@media screen and (max-width: 480px) {
+  .radio {
+    margin-bottom: 0.5555555556rem;
+  }
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
@@ -834,4 +859,10 @@ img {
 }
 .hamburger__plank:last-child {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .map-section {
+    margin-top: 19.4444444444rem;
+  }
 }
