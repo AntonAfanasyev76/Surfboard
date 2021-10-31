@@ -5,6 +5,10 @@
     height: 100vh;
     min-height: rem(650px);
     color: #fff;
+
+    @include phones {
+        margin-top: rem(90px);
+    }
 }
 
 .section__title-order {
@@ -17,6 +21,10 @@
     @include tablets {
         flex-direction: column;
         padding: 0 19%;
+    }
+
+    @include phones {
+        padding: 0;
     }
 }
 
@@ -71,6 +79,10 @@
 
     @include tablets {
         margin-bottom: 1rem;
+    }
+
+    @include tablets {
+        justify-content: center;
     }
 }
 

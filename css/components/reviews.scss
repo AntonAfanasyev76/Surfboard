@@ -1,3 +1,10 @@
+.reviews-section {
+    
+    @include phones {
+        margin-top: rem(350px);
+    }
+}
+
 .reviews {
     margin-top: rem(-30px);
 }
