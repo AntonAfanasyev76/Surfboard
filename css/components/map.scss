@@ -1,5 +1,11 @@
 .map-section {
-    
+    background: url("../img/map.png") left top no-repeat;
+    background-size:cover;
+    background-color: $yellow;
+    height: 100vh;
+    min-height: rem(650px);
+    display: flex;
+
     @include phones {
         margin-top: rem(350px);
     }

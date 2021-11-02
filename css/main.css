@@ -867,6 +867,16 @@ img {
   margin-bottom: 0;
 }
 
+.map-section {
+  background: url("../img/map.png") left top no-repeat;
+  background-size: cover;
+  background-color: #FFD517;
+  height: 100vh;
+  min-height: 36.1111111111rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 @media screen and (max-width: 480px) {
   .map-section {
     margin-top: 19.4444444444rem;
