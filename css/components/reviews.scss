@@ -1,16 +1,17 @@
 .reviews-section {
+    min-height: initial;
     
     @include tablets {
-        margin-top: rem(150px);
+        // margin-top: rem(150px);
     }
 
     @include phones {
-        margin-top: rem(250px);
+        // margin-top: rem(250px);
     }
 }
 
 .reviews {
-    margin-top: rem(-30px);
+    // margin-top: rem(-30px);
 }
 
 .reviews__display {

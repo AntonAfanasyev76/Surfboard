@@ -1,9 +1,9 @@
 .hero {
-    background: url("../img/bg.png") left top no-repeat;
+    background: url("../img/bg.png") center top no-repeat;
     background-size:cover;
     background-color: $blue;
     height: 100vh;
-    min-height: rem(650px);
+    min-height: initial;
     color: #fff;
 }
 

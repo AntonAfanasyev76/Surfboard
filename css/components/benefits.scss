@@ -1,7 +1,9 @@
 .benefits-section {
+    height: 100vh;
+    min-height: initial;
     
     @include phones {
-        margin-top: rem(100px);
+        // margin-top: rem(100px);
     }
 }
 
