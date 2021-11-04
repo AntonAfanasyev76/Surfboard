@@ -4,17 +4,17 @@ html {
 }
 @media screen and (max-width: 768px) {
   html {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 480px) {
   html {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 320px) {
   html {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
@@ -164,6 +164,11 @@ img {
     font-size: 2.5rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .hero__main-title {
+    font-size: 2rem;
+  }
+}
 @media screen and (max-width: 320px) {
   .hero__main-title {
     font-size: 2rem;
@@ -180,6 +185,12 @@ img {
     font-size: 1.5rem;
     padding: 7%;
     margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__title-desc {
+    font-size: 1.3rem;
+    padding: 10%;
   }
 }
 @media screen and (max-width: 320px) {
@@ -345,10 +356,24 @@ img {
 .section__title {
   font-size: 2.6666666667rem;
   font-weight: bold;
-  margin-bottom: 3.3333333333rem;
   text-align: center;
   text-transform: uppercase;
   color: black;
+}
+@media screen and (max-width: 768px) {
+  .section__title {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section__title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .section__title {
+    font-size: 2rem;
+  }
 }
 
 .headline {
@@ -369,6 +394,19 @@ img {
     margin-bottom: 0.7222222222rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .headline__subtitle {
+    font-size: 1rem;
+    padding: 0 13%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .headline__subtitle {
+    font-size: 1rem;
+    padding: 0 18%;
+  }
+}
+
 .benefits-section {
   height: 100vh;
   min-height: initial;
@@ -446,6 +484,23 @@ img {
   border-radius: 50%;
   overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+  .benefit__image-wrapper {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .benefit__image-wrapper {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .benefit__image-wrapper {
+    font-size: 1.5rem;
+  }
+}
 
 .benefit__icon {
   width: 3.7777777778rem;
@@ -471,9 +526,21 @@ img {
   font-weight: 700;
   color: #292929;
 }
+@media screen and (max-width: 768px) {
+  .benefit__title {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+}
 @media screen and (max-width: 480px) {
   .benefit__title {
+    font-size: 1.7rem;
     margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .benefit__title {
+    font-size: 1.5rem;
   }
 }
 
@@ -490,6 +557,11 @@ img {
 @media screen and (max-width: 768px) {
   .benefit__desc {
     font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .benefit__desc {
+    font-size: 0.9rem;
   }
 }
 .reviews-section {
@@ -551,6 +623,12 @@ img {
   margin-bottom: 1.2222222222rem;
   color: black;
 }
+@media screen and (max-width: 480px) {
+  .reviews__title {
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+}
 
 .reviews__text {
   margin-bottom: 2rem;
@@ -560,7 +638,6 @@ img {
     margin-bottom: 1rem;
   }
 }
-
 .reviews__author {
   font-size: 1rem;
   font-weihgt: bold;

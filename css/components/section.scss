@@ -9,10 +9,22 @@
 .section__title {
     font-size: rem(48px);
     font-weight: bold;
-    margin-bottom: rem(60px);
     text-align: center;
     text-transform: uppercase;
     color:  black;
+
+    @include tablets {
+        font-size: 2.5rem;
+        
+    }
+
+    @include phones {
+        font-size: 2rem;
+    }
+
+    @include iphone5 {
+        font-size: 2rem;
+    }
 }
 
 .headline {
@@ -33,6 +45,12 @@
     }
 
     @include phones {
-        // padding: 0 10%;
+        font-size: 1rem;
+        padding: 0 13%;
+    }
+
+    @include iphone5 {
+        font-size: 1rem;
+        padding: 0 18%;
     }
 }

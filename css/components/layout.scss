@@ -2,15 +2,15 @@ html {
     font-size: $baseFontSize;
 
     @include tablets {
-        font-size: $baseFontSize - 5px;
+        font-size: $baseFontSize - 2px;
     }
 
     @include phones {
-        font-size: $baseFontSize - 6px;
+        font-size: $baseFontSize - 3px;
     }
 
     @include iphone5 {
-        font-size: $baseFontSize - 7px;
+        font-size: $baseFontSize - 6px;
     }
 }
 

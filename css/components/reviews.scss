@@ -57,6 +57,11 @@
     font-weight: bold;
     margin-bottom: rem(22px);
     color: black;
+    
+    @include phones {
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
 }
 
 .reviews__text {
@@ -64,6 +69,14 @@
 
     @include tablets {
         margin-bottom: 1rem;
+    }
+    
+    @include phones {
+    
+    }
+
+    @include iphone5 {
+    
     }
 }
 
