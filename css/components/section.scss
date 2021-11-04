@@ -27,7 +27,12 @@
 .headline__subtitle {
     padding: 0 27%;
 
+    @include tablets {
+        font-size: 1.2rem;
+        margin-bottom: rem(13px);
+    }
+
     @include phones {
-        padding: 0 10%;
+        // padding: 0 10%;
     }
 }

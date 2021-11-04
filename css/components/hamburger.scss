@@ -1,5 +1,6 @@
 .hamburger {
     width: rem(24px);
+    height: rem(16px);
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
@@ -13,9 +14,9 @@
 .hamburger__plank {
     display: block;
     background: #fff;
-    height: rem(4px);
+    height: rem(3px);
     border-radius: 10px;
-    margin-bottom: rem(2px);
+    // margin-bottom: rem(2px);
 
     &:last-child {
         margin-bottom: 0;

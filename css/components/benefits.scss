@@ -109,5 +109,13 @@
 }
 
 .benefit__desc {
-    // width: rem(285px);
+
+    @include tablets {
+        font-size: 1rem;
+        // margin-bottom: rem(13px);
+    }
+
+    @include phones {
+        // padding: 0 10%;
+    }
 }

@@ -161,11 +161,12 @@ img {
 @media screen and (max-width: 768px) {
   .hero__main-title {
     padding: 0 10%;
+    font-size: 2.5rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 320px) {
   .hero__main-title {
-    font-size: 1.5555555556rem;
+    font-size: 2rem;
   }
 }
 
@@ -176,8 +177,15 @@ img {
 }
 @media screen and (max-width: 768px) {
   .hero__title-desc {
-    padding: 10%;
+    font-size: 1.5rem;
+    padding: 7%;
     margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .hero__title-desc {
+    font-size: 1.3rem;
+    padding: 10% 20%;
   }
 }
 
@@ -355,12 +363,12 @@ img {
 .headline__subtitle {
   padding: 0 27%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .headline__subtitle {
-    padding: 0 10%;
+    font-size: 1.2rem;
+    margin-bottom: 0.7222222222rem;
   }
 }
-
 .benefits-section {
   height: 100vh;
   min-height: initial;
@@ -479,6 +487,11 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .benefit__desc {
+    font-size: 1rem;
+  }
+}
 .reviews-section {
   min-height: initial;
 }
@@ -815,6 +828,7 @@ img {
 
 .hamburger {
   width: 1.3333333333rem;
+  height: 0.8888888889rem;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -838,9 +852,8 @@ img {
 .hamburger__plank {
   display: block;
   background: #fff;
-  height: 0.2222222222rem;
+  height: 0.1666666667rem;
   border-radius: 10px;
-  margin-bottom: 0.1111111111rem;
 }
 .hamburger__plank:last-child {
   margin-bottom: 0;
