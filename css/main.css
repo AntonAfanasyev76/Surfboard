@@ -363,6 +363,7 @@ img {
 @media screen and (max-width: 768px) {
   .section__title {
     font-size: 2.5rem;
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 480px) {
@@ -698,17 +699,6 @@ img {
 .section__title-order {
   color: #fff;
 }
-@media screen and (max-width: 768px) {
-  .section__title-order {
-    margin-top: 1.6666666667rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .section__title-order {
-    margin-top: 1.1111111111rem;
-  }
-}
-
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -770,12 +760,17 @@ img {
 .form__input--textarea {
   height: 10rem;
   resize: none;
+  margin-right: 5px;
 }
 .form__input:focus {
   outline: none;
   border-color: #FFD517;
 }
-
+@media screen and (max-width: 768px) {
+  .form__input {
+    padding: 0.2222222222rem 0.1111111111rem;
+  }
+}
 .form__controls {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -785,17 +780,12 @@ img {
 }
 @media screen and (max-width: 768px) {
   .form__controls {
-    margin-bottom: 1rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .form__controls {
+    margin-bottom: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
-
 .form__btn {
   display: -webkit-box;
   display: -ms-flexbox;

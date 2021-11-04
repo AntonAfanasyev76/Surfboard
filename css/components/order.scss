@@ -7,12 +7,11 @@
     color: #fff;
 
     @include tablets {
-        // min-height: rem(950px);
+        
     }
 
     @include phones {
-        // min-height: rem(950px);
-        // margin-top: 100px;
+        
     }
 }
 
@@ -20,11 +19,11 @@
     color: #fff;
 
     @include tablets {
-        margin-top: rem(30px);
+        // margin-top: rem(30px);
     }
 
     @include phones {
-        margin-top: rem(20px);
+        // margin-top: rem(20px);
     }
 }
 
@@ -77,11 +76,25 @@
     &--textarea {
         height: rem(180px);
         resize: none;
+        margin-right: 5px;
     }
 
     &:focus {
         outline: none;
         border-color:$yellow;
+        
+    }
+
+    @include tablets {
+        padding: rem(4px) rem(2px);
+        
+    }
+
+    @include phones {
+        
+    }
+
+    @include iphone5 {
         
     }
 }
@@ -91,11 +104,16 @@
     flex-wrap: wrap;
 
     @include tablets {
-        margin-bottom: 1rem;
+        margin-bottom: 0;
+        justify-content: center;
+    }
+    
+    @include phones {
+        
     }
 
-    @include tablets {
-        justify-content: center;
+    @include iphone5 {
+        
     }
 }
 
