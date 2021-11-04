@@ -777,15 +777,27 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 0.2777777778rem;
 }
 @media screen and (max-width: 768px) {
   .form__controls {
-    margin-bottom: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 0;
   }
 }
+@media screen and (max-width: 480px) {
+  .form__controls {
+    margin-bottom: 0.2777777778rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .form__controls {
+    margin-bottom: 0.2777777778rem;
+  }
+}
+
 .form__btn {
   display: -webkit-box;
   display: -ms-flexbox;

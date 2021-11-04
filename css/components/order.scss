@@ -102,18 +102,19 @@
 .form__controls {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: rem(5px);
 
     @include tablets {
-        margin-bottom: 0;
         justify-content: center;
+        margin-bottom: 0;
     }
     
     @include phones {
-        
+        margin-bottom: rem(5px);
     }
 
     @include iphone5 {
-        
+        margin-bottom: rem(5px);
     }
 }
 
