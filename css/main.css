@@ -948,8 +948,3 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 480px) {
-  .map-section {
-    margin-top: 19.4444444444rem;
-  }
-}
