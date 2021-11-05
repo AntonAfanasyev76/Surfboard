@@ -1,3 +1,50 @@
-.footer {
-    
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: #fff;
 }
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__col--align--left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacts {
+    font-size: rem(21px);
+    font-style: normal;
+    color: black;
+}
+
+.phone-number__text--footer {
+    font-size: rem(21px);
+    font-style: normal;
+    color: black;
+}
+
+.phone-number__icon-elem--footer {
+    fill: black;
+    margin-right: rem(6px);
+}
+
+.socials-list {
+    display: flex;
+}
+
+.socials__item {
+    margin-right: rem(15px);
+}
+
+// .footer__icon {
+//     fill: #B3B3B3;
+// }
+
