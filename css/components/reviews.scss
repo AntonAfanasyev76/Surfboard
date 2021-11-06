@@ -102,7 +102,7 @@
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-
+    
     &--active {
         border-color: $yellow;
     }
@@ -115,6 +115,10 @@
     bottom: 0;
     right: 0;
     display: block;
+
+    // &:hover .interactive-avatar{
+    //     border-color: $yellow;
+    // }
 }
 
 .interactive-avatar__img {

@@ -44,7 +44,14 @@ footer {
     margin-right: rem(15px);
 }
 
-// .footer__icon {
-//     fill: #B3B3B3;
-// }
+.footer__icon {
+    background-color: #fff;
+    fill: #B3B3B3;
+
+    &:hover {
+        background-color: #000;
+        fill: #fff;
+    }
+    
+}
 

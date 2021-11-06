@@ -1018,3 +1018,12 @@ footer {
 .socials__item {
   margin-right: 0.8333333333rem;
 }
+
+.footer__icon {
+  background-color: #fff;
+  fill: #B3B3B3;
+}
+.footer__icon:hover {
+  background-color: #000;
+  fill: #fff;
+}
