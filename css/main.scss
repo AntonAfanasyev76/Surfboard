@@ -27,6 +27,7 @@ $z-fixed-menu: 100;
 @import "components/layout";
 
 // components
+@import "components/menu";
 @import "components/hero";
 @import "components/header";
 @import "components/features";
@@ -37,5 +38,6 @@ $z-fixed-menu: 100;
 @import "components/order";
 @import "components/fixed-menu";
 @import "components/hamburger";
+@import "components/fullscreen-menu";
 @import "components/map";
 @import "components/footer";
