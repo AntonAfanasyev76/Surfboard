@@ -786,7 +786,6 @@ img {
 .ingredients__button {
   width: 5rem;
   height: 5rem;
-  background: #86c3d7;
   border-radius: 0.2777777778rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -819,9 +818,6 @@ img {
   line-height: 1;
 }
 
-.ingredients:hover .ingredients__button {
-  background: #60aacc;
-}
 .ingredients:hover .ingredients__dropdown {
   left: 100%;
   opacity: 1;

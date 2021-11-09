@@ -7,7 +7,7 @@
 .ingredients__button {
   width: rem(90px);
   height: rem(90px);
-  background: #86c3d7;
+  // background: #86c3d7;
   border-radius: rem(5px);
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@
 .ingredients {
   &:hover {
     .ingredients__button {
-      background: #60aacc;
+      // background: #60aacc;
     }
     .ingredients__dropdown {
       left: 100%;
