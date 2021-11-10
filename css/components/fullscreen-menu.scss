@@ -1,3 +1,9 @@
+body {
+  &.hidden {
+    overflow: hidden;
+  }
+}
+
 .fullscreen-menu {
   position: fixed;
   top: 0;

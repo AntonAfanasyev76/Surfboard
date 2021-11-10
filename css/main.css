@@ -1247,6 +1247,10 @@ img {
   margin-bottom: 0;
 }
 
+body.hidden {
+  overflow: hidden;
+}
+
 .fullscreen-menu {
   position: fixed;
   top: 0;
