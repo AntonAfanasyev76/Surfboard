@@ -877,6 +877,26 @@ img {
 .reviews-section {
   min-height: initial;
 }
+.reviews {
+  position: relative;
+  min-height: 15.5555555556rem;
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+.reviews__item.active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
+}
+
 .reviews__display {
   background: #f8faf9;
   padding: 2.7777777778rem 2.5rem 1.8888888889rem;
