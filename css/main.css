@@ -877,7 +877,7 @@ img {
 .reviews-section {
   min-height: initial;
 }
-.reviews {
+.reviews__list {
   position: relative;
   min-height: 15.5555555556rem;
 }
@@ -991,12 +991,9 @@ img {
 .interactive-avatar {
   width: 4.4444444444rem;
   height: 4.4444444444rem;
-  border: 0.3333333333rem solid transparent;
-  border-radius: 50%;
-  overflow: hidden;
   position: relative;
 }
-.interactive-avatar--active {
+.interactive-avatar--active .interactive-avatar__link {
   border-color: #FFD517;
 }
 
@@ -1007,6 +1004,9 @@ img {
   bottom: 0;
   right: 0;
   display: block;
+  border: 0.3333333333rem solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .interactive-avatar__img {

@@ -1,6 +1,6 @@
 .reviews-section {
     min-height: initial;
-    
+
     @include tablets {
         // margin-top: rem(150px);
     }
@@ -11,8 +11,13 @@
 }
 
 .reviews {
+    
+}
+
+.reviews__list {
     position: relative;
     min-height: rem(280px);
+
 }
 
 .reviews__item {
@@ -61,7 +66,7 @@
 .reviews__avatar-img {
     object-fit: cover;
     width: 100%;
-    height: 100%
+    height: 100%;
 }
 
 .reviews__content {
@@ -74,7 +79,7 @@
     font-weight: bold;
     margin-bottom: rem(22px);
     color: black;
-    
+
     @include phones {
         margin-bottom: 0;
         font-size: 1rem;
@@ -87,13 +92,11 @@
     @include tablets {
         margin-bottom: 1rem;
     }
-    
+
     @include phones {
-    
     }
 
     @include iphone5 {
-    
     }
 }
 
@@ -115,13 +118,12 @@
 .interactive-avatar {
     width: rem(80px);
     height: rem(80px);
-    border: rem(6px) solid transparent;
-    border-radius: 50%;
-    overflow: hidden;
     position: relative;
-    
+
     &--active {
-        border-color: $yellow;
+        .interactive-avatar__link {
+            border-color: $yellow;
+        }
     }
 }
 
@@ -132,10 +134,9 @@
     bottom: 0;
     right: 0;
     display: block;
-
-    // &:hover .interactive-avatar{
-    //     border-color: $yellow;
-    // }
+    border: rem(6px) solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .interactive-avatar__img {
