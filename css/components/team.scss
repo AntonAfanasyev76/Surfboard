@@ -1,5 +1,5 @@
 .team-section {
-    // height: 100vh;
+    height: 100vh;
     // min-height: initial;
 }
 
@@ -22,7 +22,7 @@
   .team--version--mobile {
     display: none;
     padding: 0;
-    justify-content: center;
+    
     margin-left: 0 !important;
    
     @include tablets {
@@ -100,8 +100,8 @@
     font-size: rem(21px);
     font-weight: bold;
     margin-bottom: rem(20px);
-    // border: 0 solid transparent;
-    // background-color: transparent;
+    border: 0 solid transparent;
+    background-color: transparent;
   
     &:after {
       content: "";

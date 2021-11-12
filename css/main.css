@@ -874,6 +874,10 @@ img {
   font-weight: bold;
 }
 
+.team-section {
+  height: 100vh;
+}
+
 .team {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -903,9 +907,6 @@ img {
 .team--version--mobile {
   display: none;
   padding: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-left: 0 !important;
 }
 @media screen and (max-width: 768px) {
@@ -987,6 +988,8 @@ img {
   font-size: 1.1666666667rem;
   font-weight: bold;
   margin-bottom: 1.1111111111rem;
+  border: 0 solid transparent;
+  background-color: transparent;
 }
 .team__title:after {
   content: "";
