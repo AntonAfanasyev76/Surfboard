@@ -1371,7 +1371,7 @@ img {
 }
 
 .input-error {
-  border-color: hotpink;
+  border-color: #fa0e0e;
 }
 
 .modal__content {
