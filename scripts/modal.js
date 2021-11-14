@@ -1,5 +1,7 @@
 const validateFields = (form, fieldsArray) => {
+  console.log(fieldsArray);
   fieldsArray.forEach((field) => {
+    console.log(field);
     field.removeClass("input-error");
     if (field.val().trim() === "") {
       field.addClass("input-error");
@@ -15,7 +17,9 @@ $(".form").submit((e) => {
   e.preventDefault();
 
   const form = $(e.currentTarget);
+  // console.log(form);
   const name = form.find("[name='name']");
+  // console.log(name);
   const phone = form.find("[name='phone']");
   const comment = form.find("[name='comment']");
   const to = form.find("[name='to']");
@@ -37,7 +41,7 @@ $(".form").submit((e) => {
         comment: comment.val(),
         to: to.val(),
       },
-      error: (data) => {},
+      error: (data) => { },
     });
 
     request.done((data) => {
@@ -69,6 +73,6 @@ $(".app-submit-btn").click((e) => {
   comment.val('');
   name.val("")
   phone.val("")
-  
+
   $.fancybox.close();
 });
