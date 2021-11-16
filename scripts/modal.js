@@ -1,7 +1,5 @@
 const validateFields = (form, fieldsArray) => {
-  console.log(fieldsArray);
   fieldsArray.forEach((field) => {
-    console.log(field);
     field.removeClass("input-error");
     if (field.val().trim() === "") {
       field.addClass("input-error");
@@ -17,9 +15,7 @@ $(".form").submit((e) => {
   e.preventDefault();
 
   const form = $(e.currentTarget);
-  // console.log(form);
   const name = form.find("[name='name']");
-  // console.log(name);
   const phone = form.find("[name='phone']");
   const comment = form.find("[name='comment']");
   const to = form.find("[name='to']");
@@ -68,11 +64,11 @@ $(".app-submit-btn").click((e) => {
   const form = $('form');
   const name = form.find("[name='name']");
   const phone = form.find("[name='phone']");
-  const comment = form.find("[name='comment']")
+  const comment = form.find("[name='comment']");
 
-  comment.val('');
-  name.val("")
-  phone.val("")
+  comment.val("");
+  name.val("");
+  phone.val("");
 
   $.fancybox.close();
 });
