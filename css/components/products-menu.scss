@@ -2,6 +2,8 @@
     background: url("./../img/img-menu.jpg") center center / cover no-repeat;
     position: relative;
     color: #fff;
+    height: 100vh;
+    min-height: initial;
   
     &:before {
       content: "";

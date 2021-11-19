@@ -735,6 +735,8 @@ img {
 }
 
 .products-section {
+  height: 100vh;
+  min-height: initial;
   background: #f8faf9;
 }
 
@@ -885,6 +887,7 @@ img {
 
 .team-section {
   height: 100vh;
+  min-height: initial;
 }
 
 .team {
@@ -1036,6 +1039,8 @@ img {
   background: url("./../img/img-menu.jpg") center center/cover no-repeat;
   position: relative;
   color: #fff;
+  height: 100vh;
+  min-height: initial;
 }
 .products-menu-section:before {
   content: "";
@@ -1143,6 +1148,7 @@ img {
 }
 
 .reviews-section {
+  height: 100vh;
   min-height: initial;
 }
 .reviews__list {
@@ -1287,6 +1293,8 @@ img {
 
 .player-section {
   background: #f8faf9;
+  height: 100vh;
+  min-height: initial;
 }
 
 .player-section__container {
@@ -1761,6 +1769,8 @@ body.hidden {
 }
 
 .map-section {
+  height: 100vh;
+  min-height: initial;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

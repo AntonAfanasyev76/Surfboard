@@ -41,9 +41,7 @@ const openItemMenu = item => {
     
     item.addClass("active");
     hiddenContent.width(reqWidth.container);
-    console.log(reqWidth.container);
     textBlock.width(reqWidth.textContainer);
-    console.log(reqWidth.textContainer);
 };
 
 $(".products-menu__title").on("click", e => {
