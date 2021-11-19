@@ -35,8 +35,17 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -1285,19 +1294,6 @@ img {
   height: 22.5rem;
   position: relative;
   margin: 0 auto;
-}
-.player-section__container:before, .player-section__container:after {
-  position: absolute;
-}
-.player-section__container::before {
-  content: url("./images/decor/corner-leaf.png");
-  bottom: -2.6666666667rem;
-  left: -6.7222222222rem;
-}
-.player-section__container::after {
-  content: url("./images/decor/blured-leaf.png");
-  top: -2.5rem;
-  right: -4.4444444444rem;
 }
 
 .player {
