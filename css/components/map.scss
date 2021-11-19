@@ -1,21 +1,25 @@
-div#map {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
-
 .map-section {
-    background: url("../img/map.png") left top no-repeat;
-    background-size:cover;
-    background-color: $yellow;
-    height: 100vh;
-    min-height: rem(650px);
+    // background: url("../img/map.png") left top no-repeat;
+    // background-size:cover;
+    // background-color: $yellow;
+    // height: 100vh;
+    // min-height: rem(650px);
     display: flex;
     position: relative;
-
-    @include phones {
-        // margin-top: rem(350px);
-    }
-}
+  }
+  
+  #map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+  }
