@@ -3,10 +3,23 @@
     top: 20%;
     right: 3%;
     z-index: $z-fixed-menu;
+    
 
     @include tablets {
         display: none;
     }
+
+    &--shadowed {
+        .fixed-menu__link::before {
+            background: black;
+        }
+
+        .fixed-menu__item--active {
+            .fixed-menu__link {
+                border-color: black;
+            }
+        }
+      }
 }
 
 .fixed-menu__item {

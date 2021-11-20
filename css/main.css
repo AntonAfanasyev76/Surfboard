@@ -1661,6 +1661,12 @@ img {
     display: none;
   }
 }
+.fixed-menu--shadowed .fixed-menu__link::before {
+  background: black;
+}
+.fixed-menu--shadowed .fixed-menu__item--active .fixed-menu__link {
+  border-color: black;
+}
 
 .fixed-menu__item {
   margin-bottom: 0.2777777778rem;

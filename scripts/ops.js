@@ -11,6 +11,16 @@ const performTransition = sectionEq => {
         inScroll = true;
         const position = sectionEq * -100;
 
+        const currentSection = section.eq(sectionEq);
+        const menuTheme = currentSection.attr("data-sidemenu-theme");
+        const sideMenu = $(".fixed-menu");
+
+        if (menuTheme === "yellow"){
+            sideMenu.addClass("fixed-menu--shadowed");
+        } else {
+            sideMenu.removeClass("fixed-menu--shadowed");
+        }
+
         display.css({
             transform: `translateY(${position}%)`
         });
@@ -19,6 +29,12 @@ const performTransition = sectionEq => {
 
         setTimeout(() => {
             inScroll = false;
+
+            sideMenu.find(".fixed-menu__item")
+            .eq(sectionEq)
+            .addClass("fixed-menu__item--active")
+            .siblings()
+            .removeClass("fixed-menu__item--active");
         },1300);
     }
 };
