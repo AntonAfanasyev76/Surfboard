@@ -1769,8 +1769,8 @@ body.hidden {
 }
 
 .map-section {
+  background-color: #FFD517;
   height: 100vh;
-  min-height: initial;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
