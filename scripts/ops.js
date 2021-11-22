@@ -1,25 +1,40 @@
 const section = $("section");
 const display = $(".maincontent");
+const sideMenu = $(".fixed-menu");
 
 let inScroll = false;
 
 section.first().addClass("active");
 
+const countSectionPosition = sectionEq => {
+    return sectionEq * -100;
+};
+
+const changeMenuThemeForSection = (sectionEq) => {
+    const currentSection = section.eq(sectionEq);
+    const menuTheme = currentSection.attr("data-sidemenu-theme");
+
+    if (menuTheme === "yellow") {
+        sideMenu.addClass("fixed-menu--shadowed");
+    } else {
+        sideMenu.removeClass("fixed-menu--shadowed");
+    }
+
+};
+
+
 const performTransition = sectionEq => {
 
     if (inScroll === false) {
+        
+        const transitionOver = 1000;
+        const mouseInertOver = 300;
+
         inScroll = true;
-        const position = sectionEq * -100;
 
-        const currentSection = section.eq(sectionEq);
-        const menuTheme = currentSection.attr("data-sidemenu-theme");
-        const sideMenu = $(".fixed-menu");
+        const position = countSectionPosition(sectionEq);
 
-        if (menuTheme === "yellow"){
-            sideMenu.addClass("fixed-menu--shadowed");
-        } else {
-            sideMenu.removeClass("fixed-menu--shadowed");
-        }
+        changeMenuThemeForSection(sectionEq);
 
         display.css({
             transform: `translateY(${position}%)`
@@ -31,11 +46,11 @@ const performTransition = sectionEq => {
             inScroll = false;
 
             sideMenu.find(".fixed-menu__item")
-            .eq(sectionEq)
-            .addClass("fixed-menu__item--active")
-            .siblings()
-            .removeClass("fixed-menu__item--active");
-        },1300);
+                .eq(sectionEq)
+                .addClass("fixed-menu__item--active")
+                .siblings()
+                .removeClass("fixed-menu__item--active");
+        }, transitionOver + mouseInertOver);
     }
 };
 
@@ -66,7 +81,7 @@ $(window).on("wheel", e => {
 });
 
 $(window).on("keydown", e => {
-    
+
     const tagName = e.target.tagName.toLowerCase();
 
     if (tagName != "input" && tagName != "textarea") {
@@ -74,7 +89,7 @@ $(window).on("keydown", e => {
             case 38:
                 scrollViewport("prev");
                 break;
-    
+
             case 40:
                 scrollViewport("next");
                 break;
