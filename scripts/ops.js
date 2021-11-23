@@ -2,6 +2,7 @@ const section = $("section");
 const display = $(".maincontent");
 const sideMenu = $(".fixed-menu");
 
+
 let inScroll = false;
 
 section.first().addClass("active");
@@ -105,4 +106,14 @@ $("[data-scroll-to]").click(e => {
     const reqSection = $(`[data-section-id=${target}]`);
 
     performTransition(reqSection.index());
-})
+});
+
+$("body").swipe({
+    swipe: function (event,direction) {
+        // const scroller = viewportScroller();
+        alert(direction);
+    },
+});
+
+
+  
