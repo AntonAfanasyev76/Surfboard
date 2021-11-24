@@ -110,7 +110,7 @@ $("[data-scroll-to]").click(e => {
 
 $("body").swipe({
     swipe: function (event,direction) {
-        // const scroller = viewportScroller();
+        const scroller = viewportScroller();
         alert(direction);
     },
 });
