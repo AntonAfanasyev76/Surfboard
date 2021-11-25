@@ -3,7 +3,7 @@ const display = $(".maincontent");
 const sideMenu = $(".fixed-menu");
 const menuItems = sideMenu.find(".fixed-menu__item");
 
-const mobilDetect = new MobileDetect(window.navigator.userAgent);
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
 const isMobile = mobileDetect.mobile();
 
 
@@ -59,44 +59,51 @@ const performTransition = sectionEq => {
     }
 };
 
-const scrollViewport = direction => {
+const viewportScroller = direction => {
     const activeSection = section.filter(".active");
     const nextSection = activeSection.next();
     const prevSection = activeSection.prev();
 
-    if (direction === "next" && nextSection.length) {
-        performTransition(nextSection.index());
-    }
-
-    if (direction === "prev" && prevSection.length) {
-        performTransition(prevSection.index());
-    }
+    return {
+        next() {
+            if (nextSection.length) {
+                performTransition(nextSection.index());
+            }
+        },
+        prev() {
+            if (prevSection.length) {
+                performTransition(prevSection.index());
+            }
+        },
+    };
 };
 
 $(window).on("wheel", e => {
     const deltaY = e.originalEvent.deltaY;
+    const scroller = viewportScroller();
 
     if (deltaY > 0) {
-        scrollViewport("next");
+        scroller.next();
     }
 
     if (deltaY < 0) {
-        scrollViewport("prev");
+        scroller.prev();
     }
 });
 
 $(window).on("keydown", e => {
 
     const tagName = e.target.tagName.toLowerCase();
+    const scroller = viewportScroller();
 
     if (tagName != "input" && tagName != "textarea") {
         switch (e.keyCode) {
             case 38:
-                scrollViewport("prev");
+                scroller.prev();
                 break;
 
             case 40:
-                scrollViewport("next");
+                scroller.next();
                 break;
         }
     }
