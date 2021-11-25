@@ -1,6 +1,10 @@
 const section = $("section");
 const display = $(".maincontent");
 const sideMenu = $(".fixed-menu");
+const menuItems = sideMenu.find(".fixed-menu__item");
+
+const mobilDetect = new MobilDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
 
 
 let inScroll = false;
@@ -27,7 +31,7 @@ const changeMenuThemeForSection = (sectionEq) => {
 const performTransition = sectionEq => {
 
     if (inScroll === false) {
-        
+
         const transitionOver = 1000;
         const mouseInertOver = 300;
 
@@ -98,6 +102,8 @@ $(window).on("keydown", e => {
     }
 });
 
+$(".wrapper").on("touchmove", e => e.preventDefault());
+
 $("[data-scroll-to]").click(e => {
     e.preventDefault();
 
@@ -108,18 +114,19 @@ $("[data-scroll-to]").click(e => {
     performTransition(reqSection.index());
 });
 
-$("body").swipe({
-    swipe: function (event,direction) {
-        const scroller = viewportScroller();
-        let scrollDirection ="";
+if (isMobile) {
 
-        if(direction === "up") scrollDirection = "next";
-        if(direction === "down") scrollDirection = "prev";
-        
-        scroller[scrollDirection]();
-      
-    },
-});
+    $("body").swipe({
+        swipe: function (event, direction) {
+            const scroller = viewportScroller();
+            let scrollDirection = "";
 
+            if (direction === "up") scrollDirection = "next";
+            if (direction === "down") scrollDirection = "prev";
 
-  
+            scroller[scrollDirection]();
+
+        },
+    });
+}
+
