@@ -44,7 +44,7 @@
   position: relative;
 
   @include tablets {
-    height: rem(300px);
+    height: rem(250px);
   }
 }
 
@@ -106,4 +106,8 @@
   font-size: rem(60px);
   display: flex;
   align-items: center;
+
+  @include phones {
+    font-size: rem(40px);
+  }
 }

@@ -42,6 +42,11 @@
     background: #f8faf9;
     padding: rem(50px) rem(45px) rem(34px);
     margin-bottom: rem(20px);
+
+    @include phones {
+        padding: 10px;
+        margin-bottom: 0;
+    }
 }
 
 .reviews__display-inner {
